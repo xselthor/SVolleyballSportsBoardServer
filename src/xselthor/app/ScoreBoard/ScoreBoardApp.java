@@ -7,10 +7,14 @@ import java.io.IOException;
 public class ScoreBoardApp extends ScoreBoardData {
     public static void main(String[] args) {
 
+        // enable anti-aliased text:
+        System.setProperty("awt.useSystemAAFontSettings","on");
+
+
         ScoreBoardData scoreBoardData = new ScoreBoardData();
         scoreBoardData.getTeam1Points();
 
-        ScoreBoardFrame frame = new ScoreBoardFrame();
+        new ScoreBoardFrame();
 
 
 /*        JFrame frame = new JFrame();

@@ -8,11 +8,11 @@ public class ScoreBoardPanelTeam2 extends JPanel {
     public void paint(Graphics g) {
         super.paint(g);
 
-        setSize(200,200);
+        setSize(212,200);
         Color blackColor = new Color(0,0,0);
 
 
-        g.drawRect(20,200,100,100);
+//        g.drawRect(20,200,100,100);
 
         setBackground(Color.DARK_GRAY);
 
@@ -21,6 +21,6 @@ public class ScoreBoardPanelTeam2 extends JPanel {
 
 
         g.setColor(Color.white);
-        g.drawString("Witamy 2", 400,100);
+        g.drawString("2Witamy", 20,100);
     }
 }
