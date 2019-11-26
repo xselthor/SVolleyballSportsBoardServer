@@ -7,7 +7,6 @@ public class ScoreBoardApp extends ScoreBoardData {
     public static void main(String[] args) {
 
         ScoreBoardData scoreBoardData = new ScoreBoardData();
-
         scoreBoardData.getTeam1Points();
 
         ScoreBoardFrame frame = new ScoreBoardFrame();
