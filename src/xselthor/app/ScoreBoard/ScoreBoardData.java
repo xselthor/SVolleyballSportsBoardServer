@@ -6,8 +6,8 @@ public class ScoreBoardData {
     private int team1WinningSet;
     private int team2WinningSet;
     private int setNumber;
-    private String team1Name;
-    private String team2Name;
+    private static String team1Name;
+    private static String team2Name;
 
 
     public int getTeam1Points() {
@@ -42,24 +42,30 @@ public class ScoreBoardData {
         this.team2Points = team2Points;
     }
 
-    public int getTeam1WinningSet() {
+    public String getTeam1WinningSet() {
+
+        String team1WinningSet = String.valueOf(this.team1WinningSet);
         return team1WinningSet;
+
     }
 
     public void setTeam1WinningSet(int team1WinningSet) {
         this.team1WinningSet = team1WinningSet;
     }
 
-    public void setTeam1WinningSetUp(){
+    public void setTeam1WinningSetUp() {
         this.team1WinningSet = this.team1WinningSet++;
     }
 
-    public void setTeam1WinningSetDown(){
+    public void setTeam1WinningSetDown() {
         this.team1WinningSet = this.team1WinningSet--;
     }
 
-    public int getTeam2WinningSet() {
+    public String getTeam2WinningSet() {
+
+        String team2WinningSet = String.valueOf(this.team2WinningSet);
         return team2WinningSet;
+
     }
 
     public void setTeam2WinningSet(int team2WinningSet) {
@@ -74,19 +80,24 @@ public class ScoreBoardData {
         this.team2WinningSet = this.team2WinningSet--;
     }
 
-    public int getSetNumber() {
+    public String getSetNumber() {
+        String setNumber = String.valueOf(this.setNumber);
         return setNumber;
+
     }
 
     public void setSetNumber(int setNumber) {
+
         this.setNumber = setNumber;
     }
 
     public void setSetNumberUp() {
+
         this.setNumber = this.setNumber++;
     }
 
     public void setSetNumberDown() {
+
         this.setNumber = this.setNumber--;
     }
 

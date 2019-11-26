@@ -22,4 +22,6 @@ public class ScoreBoardFrame extends JFrame {
         jFrame.setSize(1024,768);
         jFrame.setVisible(true);
     }
+
+
 }
