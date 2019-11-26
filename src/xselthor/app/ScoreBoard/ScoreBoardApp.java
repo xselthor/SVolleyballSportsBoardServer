@@ -2,6 +2,7 @@ package xselthor.app.ScoreBoard;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 public class ScoreBoardApp extends ScoreBoardData {
     public static void main(String[] args) {
@@ -10,7 +11,6 @@ public class ScoreBoardApp extends ScoreBoardData {
         scoreBoardData.getTeam1Points();
 
         ScoreBoardFrame frame = new ScoreBoardFrame();
-
 
 
 /*        JFrame frame = new JFrame();
