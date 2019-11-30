@@ -9,6 +9,24 @@ public class ScoreBoardData {
     private static String team1Name;
     private static String team2Name;
 
+    private static int windowSizeX;
+    private static int windowSizeY;
+
+    public static int getWindowSizeX() {
+        return windowSizeX;
+    }
+
+    public static void setWindowSizeX(int windowSizeX) {
+        ScoreBoardData.windowSizeX = windowSizeX;
+    }
+
+    public static int getWindowSizeY() {
+        return windowSizeY;
+    }
+
+    public static void setWindowSizeY(int windowSizeY) {
+        ScoreBoardData.windowSizeY = windowSizeY;
+    }
 
     public int getTeam1Points() {
         return team1Points;
