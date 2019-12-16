@@ -3,12 +3,10 @@ package xselthor.app.ScoreBoard;
 import javax.swing.*;
 import java.awt.*;
 
-
 public class ScoreBoardFrame extends JFrame {
     public ScoreBoardFrame() throws HeadlessException {
 
         ScoreBoardData scoreBoardData = new ScoreBoardData();
-
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         JFrame jFrame = new JFrame();
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,7 +29,4 @@ public class ScoreBoardFrame extends JFrame {
         scoreBoardData.setWindowSizeX(windowSize.width);
         scoreBoardData.setWindowSizeY(windowSize.height);
     }
-
-
-
 }

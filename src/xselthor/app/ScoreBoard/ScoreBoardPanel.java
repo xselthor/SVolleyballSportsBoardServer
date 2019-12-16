@@ -32,8 +32,7 @@ public class ScoreBoardPanel extends JPanel implements ActionListener {
 
         Window w = SwingUtilities.getWindowAncestor(this);
         float sizeMod = (w.getSize().width*10)/100;
-        System.out.println(sizeMod);
-
+        //System.out.println(sizeMod);
         //System.out.println(percent);
 
         ScoreBoardData scoreBoardData = new ScoreBoardData();
@@ -52,25 +51,24 @@ public class ScoreBoardPanel extends JPanel implements ActionListener {
         //g.setFont(h);
         g.drawString("SET", 850,280);
         g.drawString("CZAS GRY", 750,790);
-        g.drawString("CZAS GRY", 750,790);
 
 
         g.getFont();
         g.setColor(Color.white);
-        //g.setFont(getFont().deriveFont(180f));
+
         g.setFont(getFont().deriveFont(300f));
 
         g.drawString(scoreBoardData.getSetNumber(), 850, 540);
-
-//        g.getFont();
-//        g.setFont(getFont().deriveFont(380f));
 
         g.drawString(scoreBoardData.getTeam1WinningSet(), 120, 940);
         g.drawString(scoreBoardData.getTeam2WinningSet(), 1660, 940);
 
         g.setFont(getFont().deriveFont(600f));
-        g.drawString("12", 100,650);
-        g.drawString("34", 1200,650);
+        String te1 = String.format("%02d", scoreBoardData.getTeam1Points());
+        String te2 = String.format("%02d", scoreBoardData.getTeam2Points());
+
+        g.drawString(te1, 100,650);
+        g.drawString(te2, 1200,650);
 
         // Czas gry
         g.setColor(new Color(255, 255, 255));
@@ -78,6 +76,7 @@ public class ScoreBoardPanel extends JPanel implements ActionListener {
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
         String t1 = LocalTime.now().format(dtf);
+        //String t2 = LocalTime.now().format(dtf);
 
         g.drawString(t1, 520, 1000);
 
