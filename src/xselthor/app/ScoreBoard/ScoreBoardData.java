@@ -8,9 +8,22 @@ public class ScoreBoardData {
     private static int setNumber;
     private static String team1Name;
     private static String team2Name;
-
+    private static String t2; // reset czasu
     private static int windowSizeX;
     private static int windowSizeY;
+    private static String StoperState;
+
+    public void setStoperState(String stoperState) {
+        StoperState = stoperState;
+    }
+
+    public static String getT2() {
+        return t2;
+    }
+
+    public static void setT2(String t2) {
+        ScoreBoardData.t2 = t2;
+    }
 
     public static int getWindowSizeX() {
         return windowSizeX;
@@ -42,7 +55,6 @@ public class ScoreBoardData {
     }
 
     public void Team1PointsDown() {
-
         this.team1Points--;
     }
 
@@ -142,5 +154,9 @@ public class ScoreBoardData {
     public void setTeam2Name(String team2Name) {
 
         this.team2Name = team2Name;
+    }
+
+    public static String getStoperState() {
+        return StoperState;
     }
 }
