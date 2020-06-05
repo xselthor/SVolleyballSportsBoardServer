@@ -3,4 +3,4 @@ Volleybal Scoreboard. A server application written in Java originally intended f
 <br><br>
 <img src="sboardserver.png">
 <br><br>
-Client<a href="https://github.com/xselthor/SVolleyballSportsBoardClient">SVolleyballScoreBoardClient</a>
+Client: <a href="https://github.com/xselthor/SVolleyballSportsBoardClient">SVolleyballScoreBoardClient</a>
